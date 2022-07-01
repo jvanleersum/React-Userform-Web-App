@@ -30,23 +30,25 @@ const UserForm = (props) => {
   return (
     <Card>
       <form className="user-form" onSubmit={submitNewUserHandler}>
-        <label className="user-form__label">Username</label>
+        <label htmlFor="username"className="user-form__label">Username</label>
         <input
           type="text"
+          id="username"
           className="user-form__input"
           name="username"
           value={username}
           onChange={setEnteredUsername}
         ></input>
-        <label className="user-form__label">Age (in years)</label>
+        <label htmlFor="age" className="user-form__label">Age (in years)</label>
         <input
           type="number"
+          id="age"
           className="user-form__input"
           name="age"
           value={age}
           onChange={setEnteredAge}
         ></input>
-        <Button>Add User</Button>
+        <Button type="submit">Add User</Button>
       </form>
     </Card>
   );
