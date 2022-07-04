@@ -1,10 +1,5 @@
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  background-color: white;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.26);
   border-radius: 10px;
-  width: 100%;
-  margin: 20px;
-  padding: 20px;
 }
