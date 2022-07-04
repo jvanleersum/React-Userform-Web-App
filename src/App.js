@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import React, {useState} from 'react';
 import UserForm from './components/NewUser/UserForm';
 import UserList from './components/Users/UserList';
 
@@ -10,10 +10,10 @@ const App = () => {
   };
 
   return (
-    <div>
+    <React.Fragment>
       <UserForm onSubmit={newUserHandler}/>
       <UserList users={users} />
-    </div>
+    </React.Fragment>
   );
 }
 
